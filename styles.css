@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: 60px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.navegacion nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.navegacion nav ul li {
+    margin: 0 25px;
+    color: white;
+}
+
+.navegacion nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion nav ul li a:hover {
+    color: #0077be;
+}
+
+#inicio {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#inicio h2 {
+    font-size: 50px;
+    color: #0077be;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#inicio p {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    background: #f2f2f2;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.servicios h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.servicios-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicios-lista li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+}
+
+.servicios-lista h3 {
+    margin-top: 0;
+    color: #0077be;
+}
+
+.servicios-lista img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#tabla-servicios {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#tabla-servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077be;
+}
+
+#tabla-servicios table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tabla-servicios th {
+    background-color: #0077be;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#tabla-servicios td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabla-servicios tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabla-servicios tr:hover {
+    background-color: #f1f1f1;
+}
+
+#tabla-servicios th:focus,
+#tabla-servicios td:focus {
+    outline: 2px solid #0077be;
+}
+
+#proyectos {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077be;
+}
+
+.proyecto {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.proyecto h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.proyecto p:last-child {
+    margin-bottom: 0;
+}
+
+.contacto {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.contacto img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contacto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0077be;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contacto a:hover {
+    background: #005fa3;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #0077be;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}

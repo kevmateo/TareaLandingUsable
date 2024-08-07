@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Desarrollo de Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/logo-khanda-light.png" alt="Logo de TechSolutions con diseño moderno">
+        <section class="navegacion">
+            <h1 tabindex="1">Khanda - Soluciones de Software</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" tabindex="0">Inicio</a></li>
+                    <li><a href="#servicios" tabindex="0">Servicios</a></li>
+                    <li><a href="#proyectos" tabindex="0">Proyectos</a></li>
+                    <li><a href="#contacto" tabindex="0">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="inicio" tabindex="0">
+            <h2>Bienvenidos a TechSolutions</h2>
+            <p>Desarrollamos soluciones de software a medida para impulsar su negocio.</p>
+            <img src="Img/ImagenDeInicio.jpg" alt="Equipo de desarrollo trabajando en un proyecto" tabindex="0">
+        </section>
+
+        <section id="servicios" class="servicios" tabindex="0">
+            <h2>Nuestros Servicios</h2>
+            <ul class="servicios-lista">
+                <li>
+                    <h3>Desarrollo Web</h3>
+                    <img src="Img/desarrollo-web.jpeg" alt="Imagen representativa de desarrollo web">
+                </li>
+                <li>
+                    <h3>Aplicaciones Móviles</h3>
+                    <img src="Img/apps-moviles.jpg" alt="Imagen de aplicaciones móviles en diferentes dispositivos">
+                </li>
+                <li>
+                    <h3>Inteligencia Artificial</h3>
+                    <img src="Img/inteligencia-artificial.jpg" alt="Representación gráfica de inteligencia artificial">
+                </li>
+                <li>
+                    <h3>Consultoría IT</h3>
+                    <img src="Img/consultoria-it.jpg" alt="Imagen de una sesión de consultoría IT">
+                </li>
+            </ul>
+        </section>
+        
+        <section id="tabla-servicios" tabindex="0">
+            <h2>Detalles de Servicios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th tabindex="0">Servicio</th>
+                        <th tabindex="0">Descripción</th>
+                        <th tabindex="0">Tecnologías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td tabindex="0">Desarrollo Web</td>
+                        <td tabindex="0">Sitios y aplicaciones web responsivas</td>
+                        <td tabindex="0">HTML, CSS, JavaScript, React</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0">Aplicaciones Móviles</td>
+                        <td tabindex="0">Apps nativas y multiplataforma</td>
+                        <td tabindex="0">React Native, Flutter, Swift</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0">Inteligencia Artificial</td>
+                        <td tabindex="0">Soluciones de ML y análisis de datos</td>
+                        <td tabindex="0">Python, TensorFlow, PyTorch</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0">Consultoría IT</td>
+                        <td tabindex="0">Asesoría en transformación digital</td>
+                        <td tabindex="0">Metodologías ágiles, DevOps</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="proyectos" tabindex="0">
+            <h2>Nuestros Proyectos Destacados</h2>
+            <div class="proyecto" tabindex="0">
+                <h3>Proyecto 1: Sitio Web Corporativo</h3>
+                <p>Descripción: Desarrollo de un sitio web corporativo para una empresa de tecnología.</p>
+                <p>Tecnologías: HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="proyecto" tabindex="0">
+                <h3>Proyecto 2: Aplicación Móvil de E-commerce</h3>
+                <p>Descripción: Creación de una aplicación móvil para compras en línea.</p>
+                <p>Tecnologías: React Native, Firebase, Redux</p>
+            </div>
+            <div class="proyecto" tabindex="0">
+                <h3>Proyecto 3: Plataforma de Análisis de Datos</h3>
+                <p>Descripción: Desarrollo de una plataforma para análisis y visualización de datos.</p>
+                <p>Tecnologías: Python, Django, Tableau</p>
+            </div>
+            <div class="proyecto" tabindex="0">
+                <h3>Proyecto 4: Sistema de Gestión de Tareas</h3>
+                <p>Descripción: Implementación de un sistema para la gestión de tareas y proyectos.</p>
+                <p>Tecnologías: Angular, Node.js, MongoDB</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto" tabindex="0">
+            <h2>Contacto</h2>
+            <p tabindex="0">Estamos ubicados en Carcelen, Juan Campuzano y Jose Ordoñes, Quito, Ecuador.</p>
+            <img src="Img/Ubicacion.png" alt="Mapa de ubicación de KhandaEc en Quito" tabindex="0">
+            <a href="https://maps.app.goo.gl/ZaBHQHy4GBCMa4bW6" tabindex="0">Ver en Google Maps</a>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p tabindex="0">&copy; 2024 TechSolutions. Todos los derechos reservados.</p>
+            <p tabindex="0">Tel: +593 998729934</p>
+            <p tabindex="0">Email: <a href="mailto:contacto@techsolutions.com"
+                    tabindex="0">contacto@khandaec.com</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const primerElemento = document.querySelector('[tabindex="1"]');
+            if (primerElemento) {
+                primerElemento.focus();
+            }
+        });
+    </script>
+</body>
+
+</html>
